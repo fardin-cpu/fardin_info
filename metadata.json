@@ -1,0 +1,6 @@
+{
+  "name": "Fardin Portfolio & Skills Matrix",
+  "description": "Interactive portfolio for Fardin featuring an icon-based specialized skills matrix, general computing literacy, AI-assisted workflows, and associated work showcase.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

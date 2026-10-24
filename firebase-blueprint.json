@@ -1,0 +1,72 @@
+{
+  "entities": {
+    "custom_works": {
+      "title": "Custom Works",
+      "description": "Portfolio projects and works per skill category",
+      "fields": {
+        "skillId": {
+          "type": "string",
+          "description": "Skill category ID"
+        },
+        "works": {
+          "type": "array",
+          "description": "Array of WorkItem projects"
+        },
+        "updatedAt": {
+          "type": "string",
+          "description": "Timestamp of last update"
+        }
+      },
+      "rules": {
+        "read": "true",
+        "write": "true"
+      }
+    },
+    "site_settings": {
+      "title": "Site Settings",
+      "description": "Global custom settings including avatar",
+      "fields": {
+        "customAvatar": {
+          "type": "string",
+          "description": "Custom avatar image data URL"
+        },
+        "updatedAt": {
+          "type": "string",
+          "description": "Timestamp of update"
+        }
+      },
+      "rules": {
+        "read": "true",
+        "write": "true"
+      }
+    },
+    "feedback_messages": {
+      "title": "Feedback Messages",
+      "description": "Feedback and contact messages sent by portfolio visitors",
+      "fields": {
+        "name": {
+          "type": "string",
+          "description": "Visitor name"
+        },
+        "email": {
+          "type": "string",
+          "description": "Visitor email"
+        },
+        "message": {
+          "type": "string",
+          "description": "Feedback content"
+        },
+        "createdAt": {
+          "type": "string",
+          "description": "Creation timestamp"
+        }
+      },
+      "rules": {
+        "read": "true",
+        "create": "true",
+        "update": "false",
+        "delete": "false"
+      }
+    }
+  }
+}
